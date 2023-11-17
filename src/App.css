@@ -11977,7 +11977,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-[data-bs-theme=dark] .element {
-  color: var(--bs-primary-text-emphasis);
-  background-color: var(--bs-primary-bg-subtle);
+body {
+  color: #787878;
+}
+
+h5, .h5 {
+  color: #b9b9b9;
+  text-shadow: 2px 2px #111111;
+}
+
+.container-fix {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }/*# sourceMappingURL=App.css.map */

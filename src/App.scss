@@ -1,11 +1,21 @@
 /* The following line can be included in a src/App.scss */
 @import '~bootstrap/scss/bootstrap';
 
-$color-mode-type: data;
-
-@include color-mode(dark) {
-  .element {
-    color: var(--bs-primary-text-emphasis);
-    background-color: var(--bs-primary-bg-subtle);
+body {
+    color: #787878;  // Este es un color gris oscuro
   }
-}
+  
+h5 {
+    color: #b9b9b9;  // Este es un color gris oscuro
+    text-shadow: 2px 2px #111111;
+}  
+  
+.container-fix {
+    position: fixed;
+    top: 0;
+    left: 50%;  // Centra el borde izquierdo del contenedor en el centro de la pantalla
+    transform: translateX(-50%);  // Desplaza el contenedor a la izquierda en un 50% de su propio ancho
+    z-index: 1000;  // Esto asegura que el contenedor siempre esté en la parte superior
+  }
+  
+  
