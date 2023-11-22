@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carrousel from './components/Carrousel';
+import MetamaskButton from './components/Metamask';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Container className="container-fix">
           <Row className="justify-content-md-center">
             <Col className='text-center shadow-lg p-3 mb-4 mt-4 bg-body rounded-3 bg-transparent text-dark'>
-              <h1>Hola</h1>
+              <Col className='col-md-6 offset-md-8'>
+                <MetamaskButton></MetamaskButton>
+              </Col>
             </Col>  
           </Row>          
         </Container>        
@@ -28,9 +31,8 @@ function App() {
             <Col className='col-md-6 text-center shadow-lg p-3 mb-4 bg-body rounded-3'>
               <Carrousel></Carrousel>
             </Col>
-              <Col className='col-md-1'>
-            </Col>
-            <Col className='col-md-5 text-center shadow-lg p-3 mb-4 bg-body rounded-3'>
+
+            <Col className='col-md-5 offset-md-1 text-center shadow-lg p-3 mb-4 bg-body rounded-3'>
               <h2>Cuadro 2</h2>
               <p>Phasellus quis massa id libero posuere consectetur id ac mi. Praesent ut condimentum diam. Suspendisse eget odio vitae justo gravida bibendum sed eget ex. Fusce sodales, arcu eu vehicula rhoncus, massa ante varius dolor, et laoreet enim nisl a nisi. In sit amet tellus in lorem dapibus posuere. Cras purus metus, aliquet sit amet venenatis id, varius quis metus.</p>
             </Col>
