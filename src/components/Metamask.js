@@ -26,7 +26,7 @@ function MetamaskButton() {
 
   return (
     <>
-      <Button variant="secondary" onClick={connectMetamask}>
+      <Button size="sm" variant="outline-secondary" onClick={connectMetamask}>
         Connect 🦊
       </Button>
 
@@ -36,7 +36,7 @@ function MetamaskButton() {
         </Modal.Header>
         <Modal.Body>Por favor instala Metamask para continuar.</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button size="sm" variant="outline-secondary" onClick={handleClose}>
             Cerrar
           </Button>
         </Modal.Footer>
