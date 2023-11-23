@@ -41,9 +41,9 @@ function MetamaskButton() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Metamask no instalado</Modal.Title>
+          <Modal.Title>Metamask not installed</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Por favor instala Metamask para continuar.</Modal.Body>
+        <Modal.Body>Please install Metamask to continue.</Modal.Body>
         <Modal.Footer>
           <Button size="sm" variant="outline-secondary" onClick={handleClose}>
             Cerrar
